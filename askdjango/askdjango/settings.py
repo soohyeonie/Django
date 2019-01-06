@@ -25,7 +25,7 @@ SECRET_KEY = 'tfwocxw73-gpu!u_m4%k@+kr$_io&%y4c#i2fffa*87%t2vw8b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
