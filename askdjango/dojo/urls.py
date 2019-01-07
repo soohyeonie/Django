@@ -1,8 +1,6 @@
-from django.urls import include, path
+from django.urls import include, path, re_path
 from . import views
 
 urlpatterns = [
-    path('sum/<x>/', views.mysum),
-    path('sum/<x>/<y>/', views.mysum),
-    path('sum/<x>/<y>/<z>/', views.mysum),
+    re_path(r'^sum/(?P<numbers>[\d/]+)/$',views.mysum),
 ]
